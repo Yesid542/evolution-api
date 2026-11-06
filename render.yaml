@@ -13,5 +13,7 @@ services:
         value: Orquideas2026SecretKey
       - key: DATABASE_ENABLED
         value: "false"
+      - key: DATABASE_PROVIDER
+        value: "local"
       - key: CACHE_REDIS_ENABLED
         value: "false"
