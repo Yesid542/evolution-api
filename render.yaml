@@ -14,6 +14,14 @@ services:
       - key: DATABASE_ENABLED
         value: "true"
       - key: DATABASE_PROVIDER
-        value: "sqlite"
+        value: "postgresql"
+      - key: DATABASE_CONNECTION_URI
+        fromDatabase:
+          name: evolution-db
+          property: connectionString
       - key: CACHE_REDIS_ENABLED
         value: "false"
+
+databases:
+  - name: evolution-db
+    plan: free
