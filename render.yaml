@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: evolution-api
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: SERVER_URL
+        generateValue: true
+      - key: AUTHENTICATION_API_KEY
+        value: Orquideas2026SecretKey
+      - key: DATABASE_ENABLED
+        value: "false"
+      - key: CACHE_REDIS_ENABLED
+        value: "false"
