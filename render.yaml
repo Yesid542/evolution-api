@@ -12,8 +12,8 @@ services:
       - key: AUTHENTICATION_API_KEY
         value: Orquideas2026SecretKey
       - key: DATABASE_ENABLED
-        value: "false"
+        value: "true"
       - key: DATABASE_PROVIDER
-        value: "local"
+        value: "sqlite"
       - key: CACHE_REDIS_ENABLED
         value: "false"
